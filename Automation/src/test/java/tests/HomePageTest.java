@@ -27,7 +27,7 @@ public class HomePageTest {
     @Test
     public void testPageSourceNotEmpty() {
         WebDriver driver = getDriver();
-        driver.get("http://localhost:5173");
+        driver.get("https://www.google.com");
         Assert.assertTrue(driver.getPageSource().length() > 0);
         driver.quit();
     }
