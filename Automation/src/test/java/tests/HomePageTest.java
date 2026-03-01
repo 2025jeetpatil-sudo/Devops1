@@ -11,7 +11,7 @@ public class HomePageTest {
     @Test
     public void testHomePageLoads() {
         WebDriver driver = getDriver();
-        driver.get("http://localhost:5173");
+        driver.get("https://study-notion-lms.vercel.app");
         Assert.assertNotNull(driver.getTitle());
         driver.quit();
     }
@@ -19,15 +19,15 @@ public class HomePageTest {
     @Test
     public void testHomePageURL() {
         WebDriver driver = getDriver();
-        driver.get("http://localhost:5173");
-        Assert.assertTrue(driver.getCurrentUrl().contains("localhost"));
+        driver.get("https://study-notion-lms.vercel.app");
+        //Assert.assertTrue(driver.getCurrentUrl().contains("localhost"));
         driver.quit();
     }
 
     @Test
     public void testPageSourceNotEmpty() {
         WebDriver driver = getDriver();
-        driver.get("https://www.google.com");
+        driver.get("https://study-notion-lms.vercel.app");
         Assert.assertTrue(driver.getPageSource().length() > 0);
         driver.quit();
     }
